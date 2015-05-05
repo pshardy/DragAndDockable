@@ -1,0 +1,7 @@
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\obj\Debug\DragAndDockable.csprojResolveAssemblyReference.cache
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\obj\Debug\DragAndDockable.csproj.GenerateResource.Cache
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\bin\Debug\DragAndDockable.dll
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\bin\Debug\DragAndDockable.pdb
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\obj\Debug\DragAndDockable.dll
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\obj\Debug\DragAndDockable.pdb
+C:\Dropbox\Personal\NET Addons\DragAndDockable\DragAndDockable\obj\Debug\DragAndDockable.DragAndDockable.resources
