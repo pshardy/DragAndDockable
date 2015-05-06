@@ -102,14 +102,16 @@ namespace DragAndDockable {
             }
         }
 
-        public void CheckDockingPositions(DragAndDockable dockableForm) {
+        public bool CheckDockingPositions(DragAndDockable dockableForm) {
             if (DockingPositions != null) {
                 foreach (DockingInformation docking in DockingPositions) {
                     if (docking.PointInDock(PointToClient(Cursor.Position), dockableForm, ContainingForm)) {
                         DockWindow(dockableForm, docking.DockStyle);
+                        return true;
                     }
                 }
             }
+            return false;
         }
 
         public void BringParentToFront() {
