@@ -56,6 +56,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DragAndDockBase.resx">
+      <DependentUpon>DragAndDockBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DragAndDrockable.resx">
       <DependentUpon>DragAndDrockable.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,7 +11,6 @@ namespace DragAndDockable {
     /// </summary>
     public partial class DragAndDockable : Form {
         private readonly DragAndDockBase m_dockBase;
-        private Point m_lastPosition;
         private bool m_mouseDown;
         private bool m_moving;
         private bool m_sizing;
@@ -32,6 +31,11 @@ namespace DragAndDockable {
             this.Controls.Add(control);
         }
 
+        protected void FormIsMoving() {
+            m_moving = true;
+            m_dockBase.CheckDockingPositions(this, false, true);
+        }
+
         /// <summary>
         /// Done moving, checks for docking position.
         /// </summary>
@@ -42,7 +46,7 @@ namespace DragAndDockable {
             m_moving = false;
             m_sizing = false;
             if (dock) {
-                m_docked = m_dockBase.CheckDockingPositions(this);
+                m_docked = m_dockBase.CheckDockingPositions(this, true);
             }
         }
 
@@ -75,7 +79,7 @@ namespace DragAndDockable {
             try {
                 switch (m.Msg) {
                     case WM_MOVING:
-                        m_moving = true;
+                        FormIsMoving();
                         break;
                     case WM_SIZING:
                         m_sizing = true;
