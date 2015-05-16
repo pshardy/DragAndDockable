@@ -9,7 +9,7 @@ namespace DragAndDockable {
     /// A special container for a control which can be moved or docked. Closing will only hide the form
     /// so it can be shown again from a view menu.
     /// </summary>
-    public partial class DragAndDockable : Form {
+    public partial class DragAndDockControl : Form {
         private readonly DragAndDockBase m_dockBase;
         private bool m_mouseDown;
         private bool m_moving;
@@ -23,7 +23,7 @@ namespace DragAndDockable {
         private const int WM_MOVING = 0x0216;
         private const int WM_SIZING = 0x0214;
 
-        public DragAndDockable(Control control, DragAndDockBase dockBase) {
+        public DragAndDockControl(Control control, DragAndDockBase dockBase) {
             InitializeComponent();
             m_dockBase = dockBase;
             control.Dock = DockStyle.Fill;

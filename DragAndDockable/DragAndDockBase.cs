@@ -64,7 +64,7 @@ namespace DragAndDockable {
         /// <param name="dockableForm">The form to dock.</param>
         /// <param name="dock">Docks the form if true.</param>
         /// <returns></returns>
-        public bool CheckDockingPositions(DragAndDockable dockableForm, bool dock = false, bool highlightPosition = false) {
+        public bool CheckDockingPositions(DragAndDockControl dockableForm, bool dock = false, bool highlightPosition = false) {
             if (DockingPositions != null) {
                 foreach (DockingInformation docking in DockingPositions) {
                     if (docking.PointInDock(PointToClient(Cursor.Position), ContainingForm)) {

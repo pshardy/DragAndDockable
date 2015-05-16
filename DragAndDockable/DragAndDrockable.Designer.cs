@@ -1,5 +1,5 @@
 ﻿namespace DragAndDockable {
-    partial class DragAndDockable {
+    partial class DragAndDockControl {
         /// <summary>
         /// Required designer variable.
         /// </summary>
